@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assos Blue House Booking</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #007bff; color: white; text-align: center; padding: 20px; }
+        .property-showcase, .reviews, .booking-form { padding: 20px; }
+        .property { display: flex; justify-content: space-around; }
+        .property img { width: 300px; height: auto; }
+        .review { margin: 10px 0; }
+        footer { text-align: center; padding: 10px; background: #f1f1f1; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Assos Blue House</h1>
+</header>
+
+<div class="property-showcase">
+    <h2>Property Showcase</h2>
+    <div class="property">
+        <div>
+            <img src="property1.jpg" alt="Property Image">
+            <h3>Cozy Seaside Cottage</h3>
+            <p>Price: $150/night</p>
+        </div>
+        <div>
+            <img src="property2.jpg" alt="Property Image">
+            <h3>Luxury Villa</h3>
+            <p>Price: $300/night</p>
+        </div>
+    </div>
+</div>
+
+<div class="booking-form">
+    <h2>Booking Form</h2>
+    <form id="bookingForm">
+        <label for="checkin">Check-in:</label>
+        <input type="date" id="checkin" required>
+        <label for="checkout">Check-out:</label>
+        <input type="date" id="checkout" required>
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" min="1" required>
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+
+<div class="reviews">
+    <h2>Reviews</h2>
+    <div class="review">"Had a wonderful stay!" - John Doe</div>
+    <div class="review">"Beautiful view and great service." - Jane Smith</div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Assos Blue House</p>
+</footer>
+
+<script>
+    document.getElementById('bookingForm').onsubmit = function(e) {
+        e.preventDefault();
+        alert('Booking Confirmed!');
+    };
+</script>
+
+</body>
+</html>
