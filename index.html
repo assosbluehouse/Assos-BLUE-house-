@@ -3,67 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Booking Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Assos Blue House Kefalonia - Premium Booking</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="hero">
-            <h1>Welcome to Our Premium Booking Website</h1>
-            <p>Your dream vacation is just a click away!</p>
-            <button>Book Now</button>
-        </div>
+        <section class="hero">
+            <h1>Welcome to Assos Blue House Kefalonia</h1>
+            <p>Your luxurious escape in the heart of Kefalonia.</p>
+            <a href="#booking" class="btn">Book Now</a>
+        </section>
     </header>
-    <section class="property-showcase">
-        <h2>Featured Properties</h2>
-        <div class="properties">
-            <!-- Dynamic property cards here -->
-            <div class="property-card">
-                <img src="property1.jpg" alt="Property 1">
-                <h3>Luxury Beach House</h3>
-                <p>Starting from $299/night</p>
+    <main>
+        <section class="property-showcase">
+            <h2>Our Properties</h2>
+            <div class="properties">
+                <div class="property-item">
+                    <img src="property1.jpg" alt="Property 1">
+                    <h3>Sea View Villa</h3>
+                    <p>Enjoy stunning sea views from this beautiful villa.</p>
+                </div>
+                <div class="property-item">
+                    <img src="property2.jpg" alt="Property 2">
+                    <h3>Cozy Apartment</h3>
+                    <p>A cozy apartment perfect for couples or solo travelers.</p>
+                </div>
+                <div class="property-item">
+                    <img src="property3.jpg" alt="Property 3">
+                    <h3>Luxury Suite</h3>
+                    <p>Experience luxury with our premium suite options.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="booking-engine">
-        <h2>Check Availability</h2>
-        <form>
-            <label for="check-in">Check-in:</label>
-            <input type="date" id="check-in" required>
-            <label for="check-out">Check-out:</label>
-            <input type="date" id="check-out" required>
-            <button type="submit">Check Availability</button>
-        </form>
-    </section>
-    <section class="guest-reviews">
-        <h2>Guest Reviews</h2>
-        <div class="reviews">
+        </section>
+        <section class="booking-engine" id="booking">
+            <h2>Booking Engine</h2>
+            <form action="#">
+                <label for="check-in">Check-in:</label>
+                <input type="date" id="check-in" name="check-in" required>
+                <label for="check-out">Check-out:</label>
+                <input type="date" id="check-out" name="check-out" required>
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+                <button type="submit" class="btn">Search Availability</button>
+            </form>
+        </section>
+        <section class="guest-reviews">
+            <h2>Guest Reviews</h2>
             <blockquote>
-                <p>"Amazing experience! Highly recommended." - John Doe</p>
+                <p>"The best vacation we've ever had! The views were breathtaking!" - Sarah M.</p>
             </blockquote>
-        </div>
-    </section>
-    <section class="amenities">
-        <h2>Amenities</h2>
-        <ul>
-            <li>Free Wi-Fi</li>
-            <li>Pool</li>
-            <li>Gym</li>
-            <li>Breakfast Included</li>
-        </ul>
-    </section>
-    <section class="gallery">
-        <h2>Gallery</h2>
-        <div class="images">
-            <img src="gallery1.jpg" alt="Gallery Image 1">
-            <img src="gallery2.jpg" alt="Gallery Image 2">
-        </div>
-    </section>
+            <blockquote>
+                <p>"A charming place, very cozy and welcoming." - John D.</p>
+            </blockquote>
+        </section>
+        <section class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+                <li>Free Wi-Fi</li>
+                <li>Swimming Pool</li>
+                <li>24/7 Customer Service</li>
+                <li>Beach Access</li>
+                <li>Parking</li>
+            </ul>
+        </section>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img src="gallery1.jpg" alt="Gallery Image 1">
+                <img src="gallery2.jpg" alt="Gallery Image 2">
+                <img src="gallery3.jpg" alt="Gallery Image 3">
+            </div>
+        </section>
+    </main>
     <footer>
-        <h2>Contact Us</h2>
-        <p>Email: info@bookingwebsite.com</p>
-        <p>Phone: +1 234 567 8901</p>
+        <p>&copy; 2026 Assos Blue House Kefalonia. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
