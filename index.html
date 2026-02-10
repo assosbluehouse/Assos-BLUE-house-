@@ -3,68 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assos Blue House Booking</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Assos Blue House - Booking</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #007bff; color: white; text-align: center; padding: 20px; }
-        .property-showcase, .reviews, .booking-form { padding: 20px; }
-        .property { display: flex; justify-content: space-around; }
-        .property img { width: 300px; height: auto; }
-        .review { margin: 10px 0; }
-        footer { text-align: center; padding: 10px; background: #f1f1f1; }
+        body { font-family: Arial, sans-serif; }
+        .header { background: #007bff; color: white; padding: 20px; }
+        .footer { text-align: center; padding: 10px; background: #f8f8f8; }
+        .property-gallery { display: flex; flex-wrap: wrap; }
+        .property-item { margin: 10px; }
     </style>
 </head>
 <body>
 
-<header>
+<header class="header">
     <h1>Welcome to Assos Blue House</h1>
+    <nav>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<div class="property-showcase">
-    <h2>Property Showcase</h2>
-    <div class="property">
-        <div>
-            <img src="property1.jpg" alt="Property Image">
-            <h3>Cozy Seaside Cottage</h3>
-            <p>Price: $150/night</p>
+<main class="container">
+    <section id="properties" class="my-4">
+        <h2>Our Properties</h2>
+        <div class="property-gallery">
+            <!-- Sample Property Item -->
+            <div class="property-item col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="property1.jpg" alt="Property 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Villa</h5>
+                        <p class="card-text">Description of the property.</p>
+                        <a href="#" class="btn btn-primary">Check Availability</a>
+                    </div>
+                </div>
+            </div>
+            <!-- More properties can be added here -->
         </div>
+    </section>
+
+    <section id="reviews" class="my-4">
+        <h2>Guest Reviews</h2>
         <div>
-            <img src="property2.jpg" alt="Property Image">
-            <h3>Luxury Villa</h3>
-            <p>Price: $300/night</p>
+            <p>"Great experience!" - Guest Name</p>
+            <!-- More reviews can be added here -->
         </div>
-    </div>
-</div>
+    </section>
 
-<div class="booking-form">
-    <h2>Booking Form</h2>
-    <form id="bookingForm">
-        <label for="checkin">Check-in:</label>
-        <input type="date" id="checkin" required>
-        <label for="checkout">Check-out:</label>
-        <input type="date" id="checkout" required>
-        <label for="guests">Number of Guests:</label>
-        <input type="number" id="guests" min="1" required>
-        <button type="submit">Book Now</button>
-    </form>
-</div>
+    <section id="booking" class="my-4">
+        <h2>Book Your Stay</h2>
+        <form>
+            <div class="form-group">
+                <label for="checkIn">Check-in</label>
+                <input type="date" class="form-control" id="checkIn" required>
+            </div>
+            <div class="form-group">
+                <label for="checkOut">Check-out</label>
+                <input type="date" class="form-control" id="checkOut" required>
+            </div>
+            <button type="submit" class="btn btn-success">Confirm Booking</button>
+        </form>
+    </section>
+</main>
 
-<div class="reviews">
-    <h2>Reviews</h2>
-    <div class="review">"Had a wonderful stay!" - John Doe</div>
-    <div class="review">"Beautiful view and great service." - Jane Smith</div>
-</div>
-
-<footer>
-    <p>&copy; 2026 Assos Blue House</p>
+<footer class="footer">
+    <p>&copy; 2026 Assos Blue House. All rights reserved.</p>
 </footer>
-
-<script>
-    document.getElementById('bookingForm').onsubmit = function(e) {
-        e.preventDefault();
-        alert('Booking Confirmed!');
-    };
-</script>
 
 </body>
 </html>
