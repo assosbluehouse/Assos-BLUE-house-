@@ -3,75 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Assos Blue House - Booking</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .header { background: #007bff; color: white; padding: 20px; }
-        .footer { text-align: center; padding: 10px; background: #f8f8f8; }
-        .property-gallery { display: flex; flex-wrap: wrap; }
-        .property-item { margin: 10px; }
-    </style>
+    <title>Premium Booking Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-<header class="header">
-    <h1>Welcome to Assos Blue House</h1>
-    <nav>
-        <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
-            <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main class="container">
-    <section id="properties" class="my-4">
-        <h2>Our Properties</h2>
-        <div class="property-gallery">
-            <!-- Sample Property Item -->
-            <div class="property-item col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="property1.jpg" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Luxury Villa</h5>
-                        <p class="card-text">Description of the property.</p>
-                        <a href="#" class="btn btn-primary">Check Availability</a>
-                    </div>
-                </div>
+    <header>
+        <div class="hero">
+            <h1>Welcome to Our Premium Booking Website</h1>
+            <p>Your dream vacation is just a click away!</p>
+            <button>Book Now</button>
+        </div>
+    </header>
+    <section class="property-showcase">
+        <h2>Featured Properties</h2>
+        <div class="properties">
+            <!-- Dynamic property cards here -->
+            <div class="property-card">
+                <img src="property1.jpg" alt="Property 1">
+                <h3>Luxury Beach House</h3>
+                <p>Starting from $299/night</p>
             </div>
-            <!-- More properties can be added here -->
         </div>
     </section>
-
-    <section id="reviews" class="my-4">
-        <h2>Guest Reviews</h2>
-        <div>
-            <p>"Great experience!" - Guest Name</p>
-            <!-- More reviews can be added here -->
-        </div>
-    </section>
-
-    <section id="booking" class="my-4">
-        <h2>Book Your Stay</h2>
+    <section class="booking-engine">
+        <h2>Check Availability</h2>
         <form>
-            <div class="form-group">
-                <label for="checkIn">Check-in</label>
-                <input type="date" class="form-control" id="checkIn" required>
-            </div>
-            <div class="form-group">
-                <label for="checkOut">Check-out</label>
-                <input type="date" class="form-control" id="checkOut" required>
-            </div>
-            <button type="submit" class="btn btn-success">Confirm Booking</button>
+            <label for="check-in">Check-in:</label>
+            <input type="date" id="check-in" required>
+            <label for="check-out">Check-out:</label>
+            <input type="date" id="check-out" required>
+            <button type="submit">Check Availability</button>
         </form>
     </section>
-</main>
-
-<footer class="footer">
-    <p>&copy; 2026 Assos Blue House. All rights reserved.</p>
-</footer>
-
+    <section class="guest-reviews">
+        <h2>Guest Reviews</h2>
+        <div class="reviews">
+            <blockquote>
+                <p>"Amazing experience! Highly recommended." - John Doe</p>
+            </blockquote>
+        </div>
+    </section>
+    <section class="amenities">
+        <h2>Amenities</h2>
+        <ul>
+            <li>Free Wi-Fi</li>
+            <li>Pool</li>
+            <li>Gym</li>
+            <li>Breakfast Included</li>
+        </ul>
+    </section>
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="images">
+            <img src="gallery1.jpg" alt="Gallery Image 1">
+            <img src="gallery2.jpg" alt="Gallery Image 2">
+        </div>
+    </section>
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Email: info@bookingwebsite.com</p>
+        <p>Phone: +1 234 567 8901</p>
+    </footer>
 </body>
 </html>
